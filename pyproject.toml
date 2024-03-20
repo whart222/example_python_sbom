@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "example_python_sbom"
+version = "0.1.0"
+description = "A simple package that illustrates SBOMs"
+authors = ["whart222 <whart222@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+# Required dependencies
+numpy = "*"
+
+# Optional dependencies
+scipy = { version = "*", optional = true }
+
+# Specify one or more optional dependencies as a group
+[tool.poetry.extras]
+scipy = ["scipy"]
+
+# Specify dependencies that are required for testing 
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+
+
+[[tool.poetry.source]]
+name = "pythonhosted"
+url = "https://files.pythonhosted.org"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
