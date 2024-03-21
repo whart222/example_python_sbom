@@ -1,6 +1,6 @@
 import pytest
 
-import example_python_sbom
+import examplepythonsbom
 
 def test_value():
-    assert example_python_sbom.value == 1
+    assert examplepythonsbom.value == 1

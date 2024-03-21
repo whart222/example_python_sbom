@@ -47,7 +47,7 @@
         "numpy@1.26.4",
         "pytest@8.1.1"
       ],
-      "ref": "example_python_sbom"
+      "ref": "examplepythonsbom"
     },
     {
       "ref": "numpy@1.26.4"
@@ -58,13 +58,13 @@
   ],
   "metadata": {
     "component": {
-      "bom-ref": "example_python_sbom",
+      "bom-ref": "examplepythonsbom",
       "description": "A simple package that illustrates SBOMs",
-      "name": "example_python_sbom",
+      "name": "examplepythonsbom",
       "type": "application",
       "version": "0.1.0"
     },
-    "timestamp": "2024-03-21T15:33:05.662856+00:00",
+    "timestamp": "2024-03-21T16:31:33.300322+00:00",
     "tools": [
       {
         "externalReferences": [
@@ -146,7 +146,7 @@
       }
     ]
   },
-  "serialNumber": "urn:uuid:806e53cd-79e9-467f-bf54-dc0bd4d9b5ed",
+  "serialNumber": "urn:uuid:b277feff-637b-46fa-aa97-091c9765d399",
   "version": 1,
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",

@@ -99,7 +99,7 @@
       "version": "3.2.3"
     },
     {
-      "bom-ref": "BomRef.803809180351355.1181537002800156",
+      "bom-ref": "BomRef.8199731629630926.19247916876103177",
       "description": "Bash tab completion for argparse",
       "externalReferences": [
         {
@@ -539,7 +539,7 @@
       "version": "0.7.1"
     },
     {
-      "bom-ref": "example_python_sbom==0.1.0",
+      "bom-ref": "examplepythonsbom==0.1.0",
       "description": "A simple package that illustrates SBOMs",
       "externalReferences": [
         {
@@ -548,7 +548,7 @@
           "url": "file:///home/wehart/dev/bsswf/example_python_sbom"
         }
       ],
-      "name": "example_python_sbom",
+      "name": "examplepythonsbom",
       "type": "library",
       "version": "0.1.0"
     },
@@ -1145,7 +1145,7 @@
       "version": "1.4.3"
     },
     {
-      "bom-ref": "BomRef.03408083550877883.8675631968014349",
+      "bom-ref": "BomRef.3899031272188421.19271018936881834",
       "description": "Install and Run Python Applications in Isolated Environments",
       "externalReferences": [
         {
@@ -2134,7 +2134,7 @@
       "dependsOn": [
         "wheel==0.43.0"
       ],
-      "ref": "BomRef.803809180351355.1181537002800156"
+      "ref": "BomRef.8199731629630926.19247916876103177"
     },
     {
       "dependsOn": [
@@ -2201,7 +2201,7 @@
         "numpy==1.26.4",
         "scipy==1.12.0"
       ],
-      "ref": "example_python_sbom==0.1.0"
+      "ref": "examplepythonsbom==0.1.0"
     },
     {
       "dependsOn": [
@@ -2301,14 +2301,14 @@
     },
     {
       "dependsOn": [
-        "BomRef.803809180351355.1181537002800156",
+        "BomRef.8199731629630926.19247916876103177",
         "colorama==0.4.6",
         "packaging==23.2",
         "platformdirs==4.2.0",
         "tomli==2.0.1",
         "userpath==1.7.0"
       ],
-      "ref": "BomRef.03408083550877883.8675631968014349"
+      "ref": "BomRef.3899031272188421.19271018936881834"
     },
     {
       "dependsOn": [
@@ -2333,7 +2333,7 @@
     },
     {
       "dependsOn": [
-        "BomRef.803809180351355.1181537002800156",
+        "BomRef.8199731629630926.19247916876103177",
         "attrs==23.2.0",
         "colorama==0.4.6",
         "exceptiongroup==1.2.0",
@@ -2473,7 +2473,7 @@
     }
   ],
   "metadata": {
-    "timestamp": "2024-03-21T15:33:01.750887+00:00",
+    "timestamp": "2024-03-21T16:31:28.748950+00:00",
     "tools": [
       {
         "externalReferences": [
@@ -2555,7 +2555,7 @@
       }
     ]
   },
-  "serialNumber": "urn:uuid:dd7ee2fd-f86f-436e-b326-05ea2c4192fd",
+  "serialNumber": "urn:uuid:dec0d00e-2d61-4cc4-8d8c-d3660a3d2bed",
   "version": 1,
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",

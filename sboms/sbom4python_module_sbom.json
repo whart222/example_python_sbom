@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:8f65ad11-fcd6-4ba9-a2dd-88a0577260f8",
+  "serialNumber": "urn:uuid:64220a14-2a1c-4b64-9062-b3783104c4c7",
   "version": 1,
   "metadata": {
-    "timestamp": "2024-03-21T09:33:03Z",
+    "timestamp": "2024-03-21T10:31:30Z",
     "tools": {
       "components": [
         {
@@ -18,14 +18,14 @@
     "component": {
       "type": "application",
       "bom-ref": "CDXRef-DOCUMENT",
-      "name": "Python-example_python_sbom"
+      "name": "Python-examplepythonsbom"
     }
   },
   "components": [
     {
       "type": "application",
-      "bom-ref": "1-example-python-sbom",
-      "name": "example-python-sbom",
+      "bom-ref": "1-examplepythonsbom",
+      "name": "examplepythonsbom",
       "version": "0.1.0",
       "supplier": {
         "name": "",
@@ -35,16 +35,16 @@
           }
         ]
       },
-      "cpe": "cpe:2.3:a::example-python-sbom:0.1.0:*:*:*:*:*:*:*",
+      "cpe": "cpe:2.3:a::examplepythonsbom:0.1.0:*:*:*:*:*:*:*",
       "description": "A simple package that illustrates SBOMs",
       "externalReferences": [
         {
-          "url": "https://pypi.org/project/example_python_sbom/0.1.0",
+          "url": "https://pypi.org/project/examplepythonsbom/0.1.0",
           "type": "distribution",
           "comment": "Download location for component"
         }
       ],
-      "purl": "pkg:pypi/example-python-sbom@0.1.0",
+      "purl": "pkg:pypi/examplepythonsbom@0.1.0",
       "properties": [
         {
           "name": "language",
@@ -94,7 +94,13 @@
     {
       "ref": "CDXRef-DOCUMENT",
       "dependsOn": [
-        "1-example-python-sbom"
+        "1-examplepythonsbom"
+      ]
+    },
+    {
+      "ref": "1-examplepythonsbom",
+      "dependsOn": [
+        "2-numpy"
       ]
     }
   ]

@@ -11,7 +11,7 @@ pip install platformdirs
 pip install sbom4python
 pip install cyclonedx-bom
 
-echo "Install example_python_sbom with pip"
+echo "Install examplepythonsbom with pip"
 cd ..
 pip install -e .
 cd sboms
@@ -20,11 +20,11 @@ cd sboms
 cyclonedx-py environment -o cyclonedx_env_sbom.json
 
 # Generate SBOM from installed package
-sbom4python --module example_python_sbom --sbom cyclonedx --format json -o sbom4python_module_sbom.json
+sbom4python --module examplepythonsbom --sbom cyclonedx --format json -o sbom4python_module_sbom.json
 
-pip uninstall -y example_python_sbom
+pip uninstall -y examplepythonsbom
 
-echo "Install example_python_sbom with poetry"
+echo "Install examplepythonsbom with poetry"
 cd ..
 rm -f poetry.lock
 poetry install
@@ -37,3 +37,4 @@ cd sboms
 
 conda deactivate
 conda env remove -n generate_sboms
+rm ../poetry.lock

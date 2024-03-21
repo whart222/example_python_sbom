@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "example_python_sbom"
+name = "examplepythonsbom"
 version = "0.1.0"
 description = "A simple package that illustrates SBOMs"
 authors = ["whart222 <whart222@gmail.com>"]
