@@ -1,0 +1,101 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:8f65ad11-fcd6-4ba9-a2dd-88a0577260f8",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-03-21T09:33:03Z",
+    "tools": {
+      "components": [
+        {
+          "name": "sbom4python",
+          "version": "0.10.3",
+          "type": "application"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "bom-ref": "CDXRef-DOCUMENT",
+      "name": "Python-example_python_sbom"
+    }
+  },
+  "components": [
+    {
+      "type": "application",
+      "bom-ref": "1-example-python-sbom",
+      "name": "example-python-sbom",
+      "version": "0.1.0",
+      "supplier": {
+        "name": "",
+        "contact": [
+          {
+            "email": "whart222@gmail.com"
+          }
+        ]
+      },
+      "cpe": "cpe:2.3:a::example-python-sbom:0.1.0:*:*:*:*:*:*:*",
+      "description": "A simple package that illustrates SBOMs",
+      "externalReferences": [
+        {
+          "url": "https://pypi.org/project/example_python_sbom/0.1.0",
+          "type": "distribution",
+          "comment": "Download location for component"
+        }
+      ],
+      "purl": "pkg:pypi/example-python-sbom@0.1.0",
+      "properties": [
+        {
+          "name": "language",
+          "value": "Python"
+        },
+        {
+          "name": "python_version",
+          "value": "3.10.14"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "2-numpy",
+      "name": "numpy",
+      "version": "1.26.4",
+      "supplier": {
+        "name": "Travis E . Oliphant et al ."
+      },
+      "cpe": "cpe:2.3:a:travis_e._oliphant_et_al.:numpy:1.26.4:*:*:*:*:*:*:*",
+      "description": "Fundamental package for array computing in Python",
+      "externalReferences": [
+        {
+          "url": "https://pypi.org/project/numpy/1.26.4",
+          "type": "distribution",
+          "comment": "Download location for component"
+        }
+      ],
+      "purl": "pkg:pypi/numpy@1.26.4",
+      "properties": [
+        {
+          "name": "language",
+          "value": "Python"
+        },
+        {
+          "name": "python_version",
+          "value": "3.10.14"
+        },
+        {
+          "name": "License Comments",
+          "value": "numpy declares Copyright (c) 2005-2023, NumPy Developers. which is not currently a valid SPDX License identifier or expression."
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "CDXRef-DOCUMENT",
+      "dependsOn": [
+        "1-example-python-sbom"
+      ]
+    }
+  ]
+}
